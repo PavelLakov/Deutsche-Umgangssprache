@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url('images/image1.jpg');">
+                <div class="content">
+                    <div class="name">Kennst du diese Ausdrücke?</div>
+                    <div class="des">Umgangssprache</div>
+                    <button class="see-more" data-video="videos/video1.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image2.jpg');">
+                <div class="content">
+                    <div class="name">Lerne die deutsche Umgangssprache! (Teil 2) Hochdeutsch vs. Umgangssprachee</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video2.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image3.jpg');">
+                <div class="content">
+                    <div class="name">Hochdeutsch vs. Umgangssprache</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video3.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image4.jpg');">
+                <div class="content">
+                    <div class="name">10 umgangssprachliche Ausdrücke</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video4.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image5.jpg');">
+                <div class="content">
+                    <div class="name">Konversation auf Deutsch</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video5.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image6.jpg');">
+                <div class="content">
+                    <div class="name">Wie viel verstehst du im Gespräch von deutschen Muttersprachlern?</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video6.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image7.jpg');">
+                <div class="content">
+                    <div class="name"> Konversation auf Deutsch</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video7.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image8.jpg');">
+                <div class="content">
+                    <div class="name">Konversation auf Deutsch (Teil 2)</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video8.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image9.jpg');">
+                <div class="content">
+                    <div class="name">Diese 10 Verben solltest du kennen!</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video9.mp4">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/image10.jpg');">
+                <div class="content">
+                    <div class="name">Kennst du diese 10 Ausdrücke?</div>
+                    <div class="des">Umgangssprache </div>
+                    <button class="see-more" data-video="videos/video10.mp4">See More</button>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="modalVideo" width="100%" controls>
+                <source id="videoSource" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="backButton" class="back-button">Back</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
